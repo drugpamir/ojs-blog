@@ -1,9 +1,10 @@
+import NavBar from "./navbar";
+
 /**
  *
  * @param {Element} el
  */
 export default function runApp(el) {
-  el.innerHTML = "Hello JS";
+  el.innerHTML = `
+  ${NavBar()}`;
 }
-
-export const sum = (a, b) => a + b;
