@@ -1,4 +1,4 @@
-const URL_PREFIX = "articles";
+const URL_PREFIX = "/articles";
 
 /**
  *
