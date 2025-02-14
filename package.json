@@ -1,0 +1,19 @@
+{
+  "name": "ojs-blog",
+  "version": "1.0.0",
+  "description": "blog pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drugpamir/ojs-blog.git"
+  },
+  "author": "Anatoly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drugpamir/ojs-blog/issues"
+  },
+  "homepage": "https://github.com/drugpamir/ojs-blog#readme"
+}
