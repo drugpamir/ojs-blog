@@ -1,10 +1,14 @@
-import NavBar from "./navbar";
+import NavBar from "./components/Navbar";
+import ArticleList from "./components/ArticleList";
+import { articles } from "./data";
 
 /**
- *
- * @param {Element} el
+ * App runner
+ * @param {HTMLElement} el - root html element
  */
 export default function runApp(el) {
   el.innerHTML = `
-  ${NavBar()}`;
+  ${NavBar()}
+  ${ArticleList(articles)}
+  `;
 }
