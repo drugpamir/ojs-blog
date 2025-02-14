@@ -4,7 +4,12 @@
   "description": "blog pages",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest --coverage",
+    "prepare": "husky",
+    "lint": "prettier --check . && eslint .",
+    "lint:fix": "prettier --write . && eslint --fix .",
+    "build": "npx webpack --mode=production --config webpack.config.js",
+    "dev": "webpack serve  --mode=development"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,27 @@
   "bugs": {
     "url": "https://github.com/drugpamir/ojs-blog/issues"
   },
-  "homepage": "https://github.com/drugpamir/ojs-blog#readme"
+  "homepage": "https://github.com/drugpamir/ojs-blog#readme",
+  "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "@eslint/js": "^9.20.0",
+    "babel-jest": "^29.7.0",
+    "check-code-coverage": "^1.10.5",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-jest": "^28.11.0",
+    "globals": "^15.15.0",
+    "html-webpack-plugin": "^5.6.3",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
 }
